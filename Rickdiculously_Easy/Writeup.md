@@ -92,26 +92,28 @@ Lets search for robots.txt and see if we get something.
 
 Whoa! something is here which is useful.
 
-
+![3](https://user-images.githubusercontent.com/75982271/110177132-7a44fd80-7e2a-11eb-8c96-56511e3fac6d.png)
 
 We will go inside the root_shell.cgi and check whats inside that.
 
 I found nothing on this page but however we have tracertool and see whats there.
 
+![4](https://user-images.githubusercontent.com/75982271/110177165-88931980-7e2a-11eb-8837-c5d794570d3d.png)
 
 
 Seems like it will do tracert when we put ip address, Lets put loopback address and see what happens, Sure enough it uses tracert command.
 
 We will try to investigate if we have command injection with ;
 
-               
+![5](https://user-images.githubusercontent.com/75982271/110177218-a2346100-7e2a-11eb-95ab-80116de6e9b2.png)
+           
 
 Lets try to get reverse shell with nc and check if that works.
 
 Indeed we got reverse shell
 
 
-
+![6](https://user-images.githubusercontent.com/75982271/110177284-c09a5c80-7e2a-11eb-9921-eefd97ecf3d9.png)
 
 
 
@@ -119,24 +121,29 @@ I went one folder back and found html folder, Wanted to explore whats inside and
 
 In this machine i was not able to use cat command due to which i was using the less command to open the file - FLAG{Yeah d- just don't do it.} - 10 Points
 
- 
+ ![7](https://user-images.githubusercontent.com/75982271/110177356-d6a81d00-7e2a-11eb-881a-dcbcb2db394f.png)
+
 
 While checking password.html i found a password but however we are not sure whose password is this lets keep in back pocket(This can also be found from gobuster). Password = winter
 
+![8](https://user-images.githubusercontent.com/75982271/110177385-e3c50c00-7e2a-11eb-96d3-ee14b6c32bae.png)
 
 
 Since we have password lets see if i can cat /etc/passwd file to find the users.
 
 Wow!.. I am able to do it. So we have 3 users RickSanchez, Morty and summer. Lets try to login and see what happens
 
+![9](https://user-images.githubusercontent.com/75982271/110177423-f6d7dc00-7e2a-11eb-8018-75f708d03b6f.png)
 
 
 I tried RickSanchez and Morty but unfortunately i wasnt able to login. Lets try the last option Summer
 
+![10](https://user-images.githubusercontent.com/75982271/110177460-06572500-7e2b-11eb-9523-6768aaa75ecb.png)
 
 
 Whoa!. I am able to login to Summer, I should have thought Summer == winter
 
+![11](https://user-images.githubusercontent.com/75982271/110177526-1d961280-7e2b-11eb-8eca-ac9d3dc80f38.png)
 
 
 Lets see what there.
