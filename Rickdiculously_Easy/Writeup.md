@@ -56,7 +56,7 @@ Lets concentrate on 13337 ports and lets try to nc to it and see what happens.
 
 Whoa!. We directly found the flag when we nc to that port - FLAG:{TheyFoundMyBackDoorMorty}-10Points
 
-
+![13337](https://user-images.githubusercontent.com/75982271/110176261-06562580-7e29-11eb-98e4-239271ba6b43.png)
 
 ------------------------------------
 
@@ -75,7 +75,7 @@ But however there is a another flag there lets see what it is.
 
 We got one more here lets take this as well. FLAG{Flip the pickle Morty!} - 10 Points 
 
-
+![60000](https://user-images.githubusercontent.com/75982271/110176316-1968f580-7e29-11eb-9164-5ad3a16b6e15.png)
 
 
 ----------------------------------------------------------------
@@ -86,7 +86,7 @@ Now lets concentrate on port 80 and see whats there inside.
 
 There is nothing inside to be honest even nothing in source code as well.
 
-
+![1](https://user-images.githubusercontent.com/75982271/110176394-36052d80-7e29-11eb-9fda-f41e95a1ef06.png)
 
 Lets search for robots.txt and see if we get something.
 
